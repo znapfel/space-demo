@@ -1,0 +1,4 @@
+[gd_scene format=2]
+
+[node name="OmniLight" type="OmniLight"]
+omni_range = 6.96446
