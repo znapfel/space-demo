@@ -17,7 +17,7 @@ func _process(delta):
 	
 	#translate(Vector3(1 * (delta * PI), 0, 1 * (delta * PI)))
 	
-	translate(Vector3(delta * (-PI / 5),0,delta * (-PI / 5)))
+	translate(Vector3((delta + .05) * (-PI / 10),0,delta * (-PI / 10)))
 	#translate(Vector3(0,0, delta * (PI / 20)))
 	
 	
