@@ -8,14 +8,16 @@ func _physics_process(delta):
 	var velocity = Vector3(0, 0, 0)
 	var rotation = 0
 	if (Input.is_action_pressed("ui_right")):
-		rotation= -0.01
+		rotate_object_local(Vector3(0, 1, 0), .05)
 	if (Input.is_action_pressed("ui_left")):
-		rotation = 0.01
+		rotate_object_local(Vector3(0, -1, 0), .05)
 	if (Input.is_action_pressed("ui_up")):
-		velocity.z = -5
+		rotate_object_local(Vector3(0, 0, -1), .05)
 	if (Input.is_action_pressed("ui_down")):
-		velocity.z = 5
-	move_and_slide(Vector3(0, 0, velocity.z))
-	rotate_y(rotation)
+		rotate_object_local(Vector3(0, 0, 1), .05)
+	if (Input.is_action_pressed("ui_forward")):
+		transform_object_local(Vector3(0, 0, 1), .05)
+	
+	
 
 
