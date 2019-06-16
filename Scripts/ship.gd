@@ -15,9 +15,4 @@ func _physics_process(delta):
 		rotate_object_local(Vector3(0, 0, -1), .05)
 	if (Input.is_action_pressed("ui_down")):
 		rotate_object_local(Vector3(0, 0, 1), .05)
-	if (Input.is_action_pressed("ui_forward")):
-		transform_object_local(Vector3(0, 0, 1), .05)
-	
-	
-
 
